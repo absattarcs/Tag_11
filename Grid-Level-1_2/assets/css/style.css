@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+ display: grid;
+ grid-template-areas: "Block_1 Block_1 Block_1"
+ "Block_2 Block_3 Block_3"
+ "Block_2 Block_4 Block_5";
+ gap: 10px;
+ width: 100%;
+ margin-top: 20px;
+ border-radius: 30px;
+}
+
+.Block_1 {
+    background-color: red;
+    grid-column: span 2;
+    height: 50px;
+    grid-area: Block_1;
+}
+
+.Block_2 {
+    background-color: blue;
+    grid-column: span 2;
+    height: 110px;
+    grid-area: Block_2;
+}
+
+.Block_3 {
+    background-color: green;
+    grid-column: span 2;
+    height: 50px;
+    grid-area: Block_3;
+}
+.Block_4 {
+    background-color: purple;
+    grid-column: span 2;
+    height: 50px;
+    grid-area: Block_4;
+}
+.Block_5 {
+    background-color: purple;
+    grid-column: span 2;
+    height: 50px;
+    grid-area: Block_5;
+}
